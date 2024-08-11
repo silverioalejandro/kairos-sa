@@ -1,0 +1,15 @@
+meta {
+  name: VStatusBudget
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{urlBase}}admin/filters/status/budget
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

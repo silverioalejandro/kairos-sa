@@ -1,0 +1,14 @@
+Al crear balance :
+    1- Agregar balance id
+    2- Solo debe apareer cuando se hace un agreso
+    3- Filtrar en balances por presupuesto
+        Modificar la busqueda por sql para contemplar el paid_id y el nuevo campo budget_id
+
+    4- Agregar en presupuesto filtro por dni.
+
+    5- En presupuesto cuando se seleccione el producto mostrar lo disponible,
+        una vez seleccionado debe mostrar lo disponible en el rango de fecha del evento.
+
+    6- En productos agregar el rango de fecha para resta la disponibilidad de los distintos productos
+        si no coloca rango de fecha mostrar solo lo de fabrica.
+

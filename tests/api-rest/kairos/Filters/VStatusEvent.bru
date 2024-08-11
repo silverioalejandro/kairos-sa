@@ -1,0 +1,15 @@
+meta {
+  name: VStatusEvent
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{urlBase}}admin/filters/status/car
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

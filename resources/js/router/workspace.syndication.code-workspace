@@ -1,0 +1,15 @@
+{
+    "folders": [
+		{
+			"path": "../../.."
+		}
+	],
+    "settings": {
+        "workbench.colorCustomizations": {
+            "activityBar.background": "#023335",
+            "titleBar.activeBackground": "#03484A",
+            "titleBar.activeForeground": "#EDFEFE"
+        },
+        "liveServer.settings.multiRootWorkspaceName": "ckeditor"
+    }
+}

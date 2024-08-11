@@ -1,0 +1,15 @@
+meta {
+  name: VStatusVehicle
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{urlBase}}admin/filters/status/freight
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

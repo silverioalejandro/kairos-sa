@@ -1,0 +1,32 @@
+version: "3"
+services:
+  dev-kairos:
+    platform: linux/amd64
+    build:
+      context: ./tools/docker/runtimes/7.4
+      args:
+        WWWGROUP: '${WWWGROUP}'
+    container_name: kairos
+    hostname: kairos.vm
+    external_links:
+      - databases:mysql
+
+    environment:
+      VIRTUAL_HOST: kairos.vm
+      WWWUSER: '${WWWUSER}'
+      WWWGROUP: 1234
+
+    volumes:
+      - ./tools/docker/bash_aliases:/home/developer/.bash_aliases
+      - .:/var/www
+
+    networks:
+      default:
+        aliases:
+          - kairos.vm
+    expose:
+      - "80"
+      - "443"
+networks:
+  default:
+      name: nginx-proxy

@@ -1,0 +1,15 @@
+meta {
+  name: VVehicleType
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{urlBase}}admin/filters/vehicle-types
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

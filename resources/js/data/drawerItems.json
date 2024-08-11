@@ -1,0 +1,107 @@
+{
+    "menu": [
+        {
+            "text": "Dashboard",
+            "to": "/",
+            "icon": "mdi-view-dashboard",
+            "class": "link",
+            "role": []
+        },
+        {
+            "text": "Clientes",
+            "to": "/customers",
+            "icon": "mdi-briefcase-account-outline",
+            "class": "link",
+            "head": false,
+            "role": []
+        },
+        {
+            "text": "Productos",
+            "to": "/products",
+            "icon": "mdi-web",
+            "class": "link",
+            "head": false,
+            "role": []
+        },
+        {
+            "text": "Fletes",
+            "to": "/freights",
+            "icon": "mdi-web",
+            "class": "link",
+            "head": false,
+            "role": []
+        },
+        {
+            "text": "Vehículos",
+            "to": "/vehicles",
+            "icon": "mdi-web",
+            "class": "link",
+            "head": false,
+            "role": []
+        },
+        {
+            "text": "Eventos",
+            "to": "/events",
+            "icon": "mdi-web",
+            "class": "link",
+            "head": false,
+            "role": []
+        },
+        {
+            "text": "Presupuesto",
+            "to": "/budgets",
+            "icon": "mdi-folder-multiple-image",
+            "class": "link",
+            "head": false,
+            "role": []
+        },
+        {
+            "text": "Balances",
+            "to": "/balances",
+            "icon": "mdi-format-list-checks",
+            "class": "link",
+            "head": false,
+            "role": [1]
+        },
+        {
+            "text": "Operadores",
+            "to": "/operators",
+            "icon": "mdi-account-lock-outline",
+            "class": "link",
+            "head": false,
+            "role": [1]
+        },
+        {
+            "text": "Contactos",
+            "to": "/contacs",
+            "icon": "mdi-phone-ring",
+            "class": "link",
+            "head": false,
+            "role": []
+        },
+        {
+            "text": "Mamá",
+            "to": "/mom",
+            "icon": "mdi-flower-tulip",
+            "class": "link",
+            "head": false,
+            "role": []
+        },
+        {
+            "text": "Hermano",
+            "to": "/brother",
+            "icon": "mdi-controller-classic",
+            "class": "link",
+            "head": false,
+            "role": []
+        },
+        {
+            "text": "Hector",
+            "to": "/hector",
+            "icon": "mdi-soccer",
+            "class": "link",
+            "head": false,
+            "role": []
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+###=========================
+@baseUrl = http://syndication.vm/api/admin
+
+###=========================
+
+# @name auth
+POST {{baseUrl}}/operators/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password": "secret"
+}
+
+###=========================
+
+# @name all
+POST {{baseUrl}}/operators/publisher HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{auth.response.body.token}}
+
+{}
+
+###=========================
+
+# @name show
+POST {{baseUrl}}/operators/publisher/3/show HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{auth.response.body.token}}
+
+{}
+
+###=========================
+
+# @name create
+POST {{baseUrl}}/operators/publisher/create HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{auth.response.body.token}}
+
+{
+    "name": "test v9933",
+    "email": "admin-v9933@default.com",
+    "company": "test company",
+    "domain_id": 1
+}
+
+###=========================
+
+# @name change-active
+POST {{baseUrl}}/operators/publisher/3/change-active HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{auth.response.body.token}}
+
+{
+    "name": "test v7",
+    "email": "admin-v7@default.com",
+    "company": "test company",
+    "domain_id": 1
+}
+
+###=========================
+
+# @name due-date
+POST {{baseUrl}}/operators/publisher/due-date HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{auth.response.body.token}}
+
+{
+    "id": 3,
+    "due_date": "2022-06-01"
+}
+
+###=========================
+
+# @name reset-password
+POST {{baseUrl}}/operators/publisher/7/reset-password HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{auth.response.body.token}}

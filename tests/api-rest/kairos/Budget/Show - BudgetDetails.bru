@@ -1,0 +1,15 @@
+meta {
+  name: Show - BudgetDetails
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{urlBase}}admin/budget/3
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

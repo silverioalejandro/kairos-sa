@@ -1,0 +1,20 @@
+{
+    "id": "Id.:",
+    "identification_number": "Dni:",
+    "budget_id": "Presupuesto Id.:",
+    "domain_id": "Sites:",
+    "name": "Name:",
+    "name_operator": "Name:",
+    "email": "Email:",
+    "created_at": "Created:",
+    "updated_at": "Updated:",
+    "is_active": "Activo:",
+    "to_job": "Link to job:",
+    "template_type_id": "Template type:",
+    "type_id": "Type Id.:",
+    "campaign": "Campaign:",
+    "publishers": "Publishers:",
+    "publisher_id": "Publisher:",
+    "campaign_id": "Campaign Id:",
+    "site": "Site:"
+}

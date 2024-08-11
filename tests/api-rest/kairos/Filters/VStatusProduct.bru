@@ -1,0 +1,15 @@
+meta {
+  name: VStatusProduct
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{urlBase}}admin/filters/status/product
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
